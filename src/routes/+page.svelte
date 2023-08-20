@@ -71,10 +71,12 @@
   }
 
   </script>	
-<div>
-	<h1>Image Generator</h1>
-	<input type="text" bind:value={inputValue} placeholder="Enter text here" />
-	<button on:click={callOpenAI}>Generate</button>
+<div class="card justify-items-stretch mx-8 my-8 px-8 py-8">
+	<h2 class="h2 pb-8">Image Generator</h2>
+  <section>
+  <input class="w-2/4 input" title="Input (text)" type="text" bind:value={inputValue} placeholder="Enter text here" />
+  <button type="button pr-4" class="btn variant-filled" on:click={callOpenAI}>Generate</button>
+</section>
 	{#if imageSrc}
 	  <img src={imageSrc} alt="Generated" />
 	{/if}
