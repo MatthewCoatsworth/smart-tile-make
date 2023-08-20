@@ -1,11 +1,11 @@
 // src/routes/api/openai/+server.js
 
 import { Configuration, OpenAIApi } from 'openai-edge'
-import { OPENAI_API_KEY } from '$env/static/private'
+//import { OPENAI_API_KEY } from '$env/static/private'
 import { OpenAIStream, StreamingTextResponse } from 'ai'
-//const aiToken = process.env.OPENAI_TOKEN
+const aiToken = process.env.OPENAI_TOKEN
 const apiConfig = new Configuration({
-  apiKey: OPENAI_API_KEY,
+  apiKey: aiToken,
 })
 const openai = new OpenAIApi(apiConfig)
 
