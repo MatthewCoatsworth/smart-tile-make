@@ -6,6 +6,7 @@
 	 * @type {null}
 	 */
 	let imageSrc = null;
+  let isLoading = false;
 	let completion = '';
 	let inputValue = '';
 
@@ -25,6 +26,7 @@
   async function displayBlobAsImage(/** @type {Blob} */ blob) {
     const dataURL = await blobToDataURL(blob);
     console.log('Image URL:', dataURL);
+    isLoading = false;
     imageSrc = dataURL;
   }
 
@@ -62,6 +64,7 @@
 
     // Handle button click
     const callOpenAI = () => {
+      isLoading = true;
       query2("only reply with a one word answer. Name a single material used in " + inputValue)
       .then((responseFromQuery2) => {
           console.log('OpenAI Response:', responseFromQuery2);
@@ -124,10 +127,14 @@
     <span>Generate</span>
     </button>
 </section>
-	{#if imageSrc}
+<div class="justify-center">
+	{#if isLoading}
+  <ProgressBar />
+  {:else if imageSrc}
 	  <img src={imageSrc} alt="Generated" />
 	{/if}
-  <ProgressBar />
+
+</div>
   </div>
 
 
