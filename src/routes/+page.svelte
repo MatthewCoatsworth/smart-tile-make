@@ -80,7 +80,7 @@
 
   </script>
 
-<div class="m-64">
+<div class="m-8">
 
 
 
