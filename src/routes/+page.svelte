@@ -1,10 +1,15 @@
 <script>
+  import 'remixicon/fonts/remixicon.css'
+  import { ProgressBar } from '@skeletonlabs/skeleton';
+ 	import { LightSwitch } from '@skeletonlabs/skeleton';
 	/**
 	 * @type {null}
 	 */
 	let imageSrc = null;
 	let completion = '';
 	let inputValue = '';
+
+
 
 
   // Convert blob to Base64 data URL
@@ -70,15 +75,63 @@
       });
   }
 
-  </script>	
-<div class="card justify-items-stretch mx-8 my-8 px-8 py-8">
-	<h2 class="h2 pb-8">Image Generator</h2>
+  </script>
+
+<div class="m-64">
+
+
+
+<div class="grid grid-cols-2 gap-4 place-content-between pb-8">
+<div>
+  <h2 class="h2 pb-8">Image Generator</h2>
+</div>
+  <div class="justify-self-end">
+    <LightSwitch />
+  </div>
+
+</div>
+
+
+<div class="card p-8 mb-8">
+  <aside class="alert variant-filled-warning mb-8">
+    <!-- Icon -->
+    <div><i class="ri-alarm-warning-fill"></i></div>
+    <!-- Message -->
+    <div class="alert-message">
+      <h3 class="h3">Alert</h3>
+      <p>this website is Early access and is likely to break</p>
+    </div>
+    <!-- Actions -->
+    <div class="alert-actions">(buttons)</div>
+  </aside>
+
+	<h2 class="h2 mb-4">step one</h2>
+	<p class="mb-8">The quick brown fox jumps over the lazy dog.</p>
+	<h2 class="h2 mb-4">step two</h2>
+	<p >The quick brown fox jumps over the lazy dog.</p>
+</div>
+
+
+
+
+
+
+<div class="card p-8">
   <section>
-  <input class="w-2/4 input" title="Input (text)" type="text" bind:value={inputValue} placeholder="Enter text here" />
-  <button type="button pr-4" class="btn variant-filled" on:click={callOpenAI}>Generate</button>
+  <input class="input mb-4" title="Input (text)" type="text" bind:value={inputValue} placeholder="Enter text here" />
+  <button type="button" class="btn variant-filled w-full" on:click={callOpenAI}>
+    <span><i class="ri-magic-fill"></i></span>
+    <span>Generate</span>
+    </button>
 </section>
 	{#if imageSrc}
 	  <img src={imageSrc} alt="Generated" />
 	{/if}
+  <ProgressBar />
   </div>
-  
+
+
+
+
+
+</div>

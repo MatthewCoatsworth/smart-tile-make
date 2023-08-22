@@ -36,6 +36,7 @@
 	"type": "module",
 	"dependencies": {
 		"ai": "^2.2.6",
-		"openai-edge": "^1.2.2"
+		"openai-edge": "^1.2.2",
+		"remixicon": "^3.5.0"
 	}
 }
