@@ -86,7 +86,7 @@
 
 <div class="grid grid-cols-2 gap-4 place-content-between pb-8">
 <div>
-  <h2 class="h2 pb-8">Image Generator</h2>
+  <h3 class="h3 pb-8">Texsture Image Generator</h3>
 </div>
   <div class="justify-self-end">
     <LightSwitch />
@@ -102,16 +102,16 @@
     <!-- Message -->
     <div class="alert-message">
       <h3 class="h3">Alert</h3>
-      <p>This website is early access so it is very likely to break.
-        - if you type want you want to see and no image apears you can wait a couple seconds and then click genarate agnin and see if it works.</p>
+      <p>This website is early access so it is very likely to break.<br/>
+        • if you type want you want to see and no image apears you can wait a couple seconds and then click genarate agnin and see if it works.</p>
     </div>
     <!-- Actions -->
     <div class="alert-actions"></div>
   </aside>
 
-	<h2 class="h2 mb-4">How my program works:</h2>
+	<h3 class="h3 mb-4">How my program works:</h3>
 	<p class="mb-8">Type in a location or building and ChatGPT will come up with a material that would be used in that location and it should be shown bellow</p>
-	<h2 class="h2 mb-4">Tip:</h2>
+	<h3 class="h3 mb-4">Tip:</h3>
 	<p >Type "House" and chatGPT should come up with a martile such as wood and then it should be displayed bellow</p>
 </div>
 
