@@ -80,19 +80,20 @@
 
   </script>
 
-<div class="m-8">
+<div class="m-8 pb-2">
 
 
 
 <div class="grid grid-cols-2 gap-4 place-content-between pb-8">
 <div>
-  <h3 class="h3 pb-8">Texsture Image Generator</h3>
+  <h3 class="h3">Texsture Image Generator</h3>
 </div>
   <div class="justify-self-end">
     <LightSwitch />
   </div>
 
 </div>
+
 
 
 <div class="card p-8 mb-8">
@@ -103,14 +104,14 @@
     <div class="alert-message">
       <h3 class="h3">Alert</h3>
       <p>This website is early access so it is very likely to break.<br/>
-        • if you type want you want to see and no image apears you can wait a couple seconds and then click genarate agnin and see if it works.</p>
+        • If no image apears you can wait a few seconds and then click 'genarate' agnin and see if it works. Try this a couple of times and hope for the best, if it dose not word then its not worth continuing. This will be fixed in later releases.</p>
     </div>
     <!-- Actions -->
     <div class="alert-actions"></div>
   </aside>
 
 	<h3 class="h3 mb-4">How my program works:</h3>
-	<p class="mb-8">Type in a location or building and ChatGPT will come up with a material that would be used in that location and it should be shown bellow</p>
+	<p class="mb-8">to use my site you must scroll down and type a type in a location or building and hit 'genarate' then ChatGPT will come up with a material that would be used in that location and the material should be shown bellow</p>
 	<h3 class="h3 mb-4">Tip:</h3>
 	<p >Type "House" and chatGPT should come up with a martile such as wood and then it should be displayed bellow</p>
 </div>
@@ -120,7 +121,8 @@
 
 
 
-<div class="card p-8">
+
+<div class="card p-8 mb-16">
   <section>
   <input class="input mb-4" title="Input (text)" type="text" bind:value={inputValue} placeholder="Enter text here" />
   <button type="button" class="btn variant-filled w-full" on:click={callOpenAI}>
