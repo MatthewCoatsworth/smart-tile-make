@@ -23,7 +23,8 @@ const config = {
 			themes: {
 				
 				// Register each theme within this array:
-				preset: [ { name: "skeleton", enhancements: true }, "modern", "crimson" ] 
+				preset: [ { name: "skeleton", enhancements: true }, //{ name: "modern", enhancements: true },
+				"modern", "crimson" ] 
 			}
 			
 		})
