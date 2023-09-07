@@ -124,7 +124,7 @@
 
 <div class="card p-8 mb-16">
   <section>
-  <input class="input mb-4" title="Input (text)" type="text" bind:value={inputValue} placeholder="Enter text here" />
+  <input class="input mb-4 p-2" title="Input (text)" type="text" bind:value={inputValue} placeholder="Enter text here" />
   <button type="button" class="btn variant-filled w-full" on:click={callOpenAI}>
     <span><i class="ri-magic-fill"></i></span>
     <span>Generate</span>
