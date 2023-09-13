@@ -110,10 +110,16 @@
     <div class="alert-actions"></div>
   </aside>
 
-	<h3 class="h3 mb-4">How my program works:</h3>
-	<p class="mb-8">to use my site you must scroll down and type a type in a location or building and hit 'genarate' then ChatGPT will come up with a material that would be used in that location and the material should be shown bellow</p>
-	<h3 class="h3 mb-4">Tip:</h3>
-	<p >Type "House" and chatGPT should come up with a martile such as wood and then it should be displayed bellow</p>
+  <h2 class="h2 mb-4">How to use my program:</h2>
+  
+	<h3 class="h3 mb-4">⌨️ Enter text:</h3>
+	<p class="mb-8">Click on the input field and type the name of a location or building. For example, you can type "House," "Office," or any other location you have in mind.</p>
+  <h3 class="h3 mb-4">🧠 GPT material:</h3>
+	<p class="mb-8">ChatGPT will decide on a material that goes in that location.</p>
+  <h3 class="h3 mb-4">🤖 Generate image:</h3>
+	<p class="mb-8">Stable diffureion will genate the texture ChatGPT desides on.</p>
+  <h3 class="h3 mb-4">You must click <kbd class="kbd">Generate</kbd> after typing in the text field to see the result. </h3>
+
 </div>
 
 
